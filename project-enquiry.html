@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Start a website or app project with KP TECH SOLUTIONS." />
+  <title>Start a Project | KP TECH SOLUTIONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy:#00347f; --blue:#075fc9; --orange:#f57808; --ink:#07295c; --muted:#52647d; --line:#d3e0f0; --pale:#f5f8fd; }
+    * { box-sizing:border-box; } body { margin:0; background:linear-gradient(135deg,#fff 0%,#f5f8fd 56%,#eef5fd 100%); color:var(--ink); font-family:Manrope,Arial,sans-serif; } a { color:inherit; text-decoration:none; }
+    .grid { background-image:linear-gradient(rgba(0,72,161,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(0,72,161,.045) 1px,transparent 1px); background-size:56px 56px; }
+    nav { display:flex; align-items:center; justify-content:space-between; max-width:1280px; margin:auto; padding:25px clamp(21px,5vw,73px); }.brand-logo { width:245px; height:62px; object-fit:contain; object-position:left center; }.back { display:inline-flex; gap:8px; align-items:center; color:var(--navy); font-size:13px; font-weight:800; }.back:hover { color:var(--orange); }
+    main { min-height:calc(100vh - 112px); padding:46px clamp(21px,7vw,112px) 86px; }.shell { display:grid; grid-template-columns:.86fr 1.14fr; max-width:1170px; min-height:640px; margin:auto; overflow:hidden; border:1px solid var(--line); border-radius:15px; background:#fff; box-shadow:0 26px 70px rgba(0,52,127,.12); }
+    .intro { position:relative; overflow:hidden; padding:57px clamp(28px,4.5vw,67px); color:#fff; background:var(--navy); }.intro::after { content:""; position:absolute; right:-165px; bottom:-165px; width:430px; height:430px; border:1px solid rgba(255,255,255,.32); border-radius:50%; box-shadow:0 0 0 50px rgba(255,255,255,.06),0 0 0 100px rgba(255,255,255,.04); }.eyebrow { position:relative; z-index:1; display:flex; gap:9px; align-items:center; color:#ffd09f; font:11px "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }.eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--orange); box-shadow:0 0 13px rgba(245,120,8,.8); }.intro h1 { position:relative; z-index:1; max-width:390px; margin:17px 0 18px; font-size:clamp(38px,4vw,58px); line-height:.99; letter-spacing:-.066em; }.intro p { position:relative; z-index:1; max-width:360px; margin:0; color:#cddcf3; font-size:14px; line-height:1.72; }.benefits { position:relative; z-index:1; display:grid; gap:20px; margin-top:60px; }.benefit { display:flex; align-items:center; gap:12px; color:#d6e3f6; font-size:13px; }.benefit i { display:grid; flex:0 0 auto; place-items:center; width:27px; height:27px; border:1px solid rgba(255,255,255,.3); border-radius:50%; color:#ffbb77; font-style:normal; }
+    .form-wrap { padding:48px clamp(26px,5vw,66px); }.form-wrap h2 { margin:0 0 7px; color:var(--navy); font-size:28px; letter-spacing:-.045em; }.form-wrap > p { margin:0 0 28px; color:var(--muted); font-size:13px; line-height:1.6; }.form-grid { display:grid; grid-template-columns:1fr 1fr; gap:17px; }.field { display:grid; gap:7px; }.field.full { grid-column:1 / -1; } label { color:#214d86; font-size:11px; font-weight:800; letter-spacing:.055em; text-transform:uppercase; } input,select,textarea { width:100%; border:1px solid #c6d7eb; border-radius:5px; outline:0; background:#fff; color:#123a70; padding:13px 14px; font:13px Manrope,Arial,sans-serif; transition:border-color .2s,box-shadow .2s; } textarea { min-height:104px; resize:vertical; } input:focus,select:focus,textarea:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(7,95,201,.11); } .disclosure { display:flex; gap:9px; align-items:flex-start; margin:22px 0 18px; color:#637895; font-size:11px; line-height:1.5; }.disclosure input { width:15px; height:15px; accent-color:var(--orange); }.submit { display:inline-flex; align-items:center; gap:13px; border:0; border-radius:5px; background:var(--orange); color:#fff; padding:15px 20px; cursor:pointer; font:800 13px Manrope,Arial,sans-serif; transition:transform .2s,box-shadow .2s; }.submit:hover { transform:translateY(-2px); box-shadow:0 11px 25px rgba(245,120,8,.25); }.note { margin:14px 0 0; color:#778aa3; font-size:11px; }.status { display:none; margin-top:14px; color:#06724a; font-size:12px; font-weight:700; }.status.show { display:block; }
+    footer { padding:19px 25px 25px; color:#6d819a; text-align:center; font:10px "DM Mono",monospace; }.phone { color:var(--orange); font-weight:800; }
+    @media(max-width:760px) { nav { padding:16px 21px; }.brand-logo { width:184px; height:49px; }.back { font-size:11px; }.shell { grid-template-columns:1fr; }.intro { padding:42px 30px; }.intro h1 { font-size:42px; }.benefits { margin-top:35px; }.form-wrap { padding:38px 27px; } main { padding:25px 18px 55px; }.form-grid { grid-template-columns:1fr; }.field.full { grid-column:auto; } }
+  </style>
+</head>
+<body class="grid">
+  <nav><a href="kp-tech-solutions.html" aria-label="KP TECH SOLUTIONS home"><img class="brand-logo" src="kp-tech-logo-white.png" alt="KP TECH SOLUTIONS — Smart Tech. Greater Possibilities." /></a><a class="back" href="kp-tech-solutions.html">← Back to website</a></nav>
+  <main>
+    <div class="shell">
+      <aside class="intro"><span class="eyebrow">Start your project</span><h1>Tell us what you want to build.</h1><p>Whether you need a standout website, a useful mobile app, or a powerful online store, we would love to learn about your idea.</p><div class="benefits"><div class="benefit"><i>✓</i> Clear, friendly project guidance</div><div class="benefit"><i>✓</i> Websites and apps made for real users</div><div class="benefit"><i>✓</i> A direct reply from KP TECH SOLUTIONS</div></div></aside>
+      <section class="form-wrap"><h2>Project enquiry</h2><p>Share a few details below. When you submit, your request will open in WhatsApp and be sent directly to our team for a reply.</p>
+        <form id="enquiry-form">
+          <div class="form-grid">
+            <div class="field"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name" required placeholder="Your name" /></div>
+            <div class="field"><label for="company">Company / brand</label><input id="company" name="company" autocomplete="organization" placeholder="Your company name" /></div>
+            <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" /></div>
+            <div class="field"><label for="phone">Phone / WhatsApp number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number" /></div>
+            <div class="field full"><label for="service">Service needed *</label><select id="service" name="service" required><option value="" disabled selected>Select a service</option><option>Website Design</option><option>Website Development</option><option>App Development</option><option>E-commerce &amp; Support</option><option>Not sure yet — I need advice</option></select></div>
+            <div class="field"><label for="timeline">Preferred timeline</label><select id="timeline" name="timeline"><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>Just exploring</option></select></div>
+            <div class="field"><label for="budget">Estimated budget</label><select id="budget" name="budget"><option>I'd rather discuss</option><option>Under ₦500,000</option><option>₦500,000 – ₦1,500,000</option><option>Over ₦1,500,000</option></select></div>
+            <div class="field full"><label for="details">Tell us about your project *</label><textarea id="details" name="details" required placeholder="What would you like your website or app to do? Include any ideas, goals, or helpful links."></textarea></div>
+          </div>
+          <label class="disclosure"><input type="checkbox" required /> <span>I agree that KP TECH SOLUTIONS may use these details to contact me about this project.</span></label>
+          <button class="submit" type="submit">Send enquiry on WhatsApp <span>↗</span></button>
+          <p class="note">Prefer to speak now? Call <a class="phone" href="tel:+2348113900026">+234 811 390 0026</a>.</p><p class="status" id="status" role="status">Your WhatsApp message is ready. Please press send in WhatsApp to deliver your enquiry.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>© 2026 KP TECH SOLUTIONS · SMART TECH. GREATER POSSIBILITIES.</footer>
+  <script>
+    const service = document.querySelector('#service');
+    const chosenService = new URLSearchParams(window.location.search).get('service');
+    if (chosenService && [...service.options].some(option => option.value === chosenService)) service.value = chosenService;
+    document.querySelector('#enquiry-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const message = `Hello KP TECH SOLUTIONS, I would like to make an enquiry.\n\n*Name:* ${data.get('name')}\n*Company / Brand:* ${data.get('company') || 'Not provided'}\n*Email:* ${data.get('email')}\n*Phone:* ${data.get('phone')}\n*Service needed:* ${data.get('service')}\n*Timeline:* ${data.get('timeline')}\n*Budget:* ${data.get('budget')}\n\n*Project details:*\n${data.get('details')}`;
+      document.querySelector('#status').classList.add('show');
+      window.open(`https://wa.me/2348113900026?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
